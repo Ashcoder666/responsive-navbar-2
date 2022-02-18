@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="brand">
+            <h1>ashcoder666</h1>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </nav>
+    <script>
+        function classtoggler(){
+            const navs=document.querySelectorAll(".nav-links");
+            navs.forEach(nav=>nav.classList.toggle("nav-link-toggle"))
+        }
+        const tog = document.querySelector(".toggle");
+        tog.addEventListener("click",classtoggler)
+    </script>
+</body>
+</html>
